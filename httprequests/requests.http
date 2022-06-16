@@ -1,0 +1,26 @@
+### create bucket
+POST http://localhost:8080/api/r2/bucket
+Content-Type: application/json
+
+{
+  "bucket" : "testbucket"
+}
+
+### create file
+POST http://localhost:8080/api/r2/file
+Content-Type: application/json
+
+{
+  "bucket" : "testbucket",
+  "key" : "file1",
+  "content" : "Hello R2"
+}
+
+### does exist
+POST http://localhost:8080/api/r2/exists
+Content-Type: application/json
+
+{
+  "bucket" : "testbucket",
+  "key" : "file1"
+}

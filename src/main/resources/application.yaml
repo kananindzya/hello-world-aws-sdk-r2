@@ -1,0 +1,5 @@
+r2:
+  endpoint: ${R2_ENDPOINT:https://%s.r2.cloudflarestorage.com}
+  accountId: ${R2_ACCOUNT_ID:}
+  accessKey: ${R2_ACCESS_KEY:}
+  secretKey: ${R2_SECRET_KEY:}
